@@ -1,0 +1,8 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://2024mt03584:2024mt03584@ziaularfeen.bpp0axz.mongodb.net/?retryWrites=true&&appName=ziaularfeen
+      database: demo_db
