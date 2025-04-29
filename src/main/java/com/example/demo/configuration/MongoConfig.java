@@ -31,8 +31,8 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(new com.mongodb.ConnectionString(uri))
                 .readPreference(ReadPreference.primary())
-                .writeConcern(WriteConcern.MAJORITY)
-                .readConcern(ReadConcern.MAJORITY)
+                .writeConcern(WriteConcern.W3)
+                .readConcern(ReadConcern.LOCAL)
                 .build();
         return MongoClients.create(settings);
     }
